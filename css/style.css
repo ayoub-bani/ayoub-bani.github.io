@@ -1,14 +1,126 @@
-@charset "UTF-8";@font-face{font-family:'Calibre-SemiBold';src:url("../dest/fonts/Calibre-Semibold.woff2")}
-*{margin:0;padding:0}body{background:#0a192f}body .custom-marg{margin-bottom:200px}
-body p{line-height:1.4em;font-family:'MyWebFont',Fallback,sans-serif}
-.icon-bar{position:fixed;top:75%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
-.icon-bar a{display:block;text-align:center;padding:16px;transition:all .3s ease;color:white;font-size:20px}
-.icon-bar a:hover{color:#64ffda}.icon-bar hr{background-color:#ccd6f6;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
-.my-email{position:fixed;top:65%;right:0;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
-.navbar{margin-bottom:65px;margin-top:25px}.navbar ul{font-family:'Roboto',sans-serif;font-weight:400;font-size:14px;color:#ccd6f6}
-#about h2{position:relative}#about h2::after{position:absolute;bottom:0;top:-10px;content:'';display:inline-block;width:50%;height:100%;margin-right:-100%;margin-left:20px;border-bottom:1px solid #8892b0}
-#about .img-margin{margin-left:80px}#about .parent img{position:relative;z-index:1}
-#about .color-overlay{width:337px;height:337px;background:#5ae6c7;opacity:.5;position:absolute;z-index:2;top:48px;left:95px}
-#about .skills::before{content:"▹";margin-right:10px;color:#64ffda;font-size:14px;line-height:12px}
-#work h2{position:relative}#work h2::after{position:absolute;bottom:0;top:-10px;content:'';display:inline-block;width:50%;height:100%;margin-right:-100%;margin-left:20px;border-bottom:1px solid #8892b0}
-#work .color-card{background:#172a45}
+@charset "UTF-8";
+@font-face {
+  font-family: 'Calibre-SemiBold';
+  src: url("../dest/fonts/Calibre-Semibold.woff2"); }
+
+body {
+  background: #0A192F; }
+  body .custom-marg {
+    margin-bottom: 200px; }
+  body p {
+    line-height: 1.4em;
+    font-family: 'MyWebFont', Fallback, sans-serif; }
+
+.icon-bar {
+  position: fixed;
+  top: 75%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px; }
+  .icon-bar a:hover {
+    color: #64FFDA; }
+  .icon-bar hr {
+    background-color: #ccd6f6;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+
+.my-email {
+  position: fixed;
+  top: 65%;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.navbar {
+  margin-bottom: 65px;
+  margin-top: 25px; }
+  .navbar ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ccd6f6; }
+
+#about h2 {
+  position: relative; }
+
+#about h2::after {
+  position: absolute;
+  bottom: 0px;
+  top: -10px;
+  content: '';
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  margin-right: -100%;
+  margin-left: 20px;
+  border-bottom: 1px solid #8892B0; }
+
+#about .img-margin {
+  margin-left: 80px; }
+
+#about .color-overlay {
+  width: 337px;
+  height: 337px;
+  background: #5AE6C7;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 2;
+  top: 48px;
+  left: 95px; }
+
+#about .skills::before {
+  content: "▹";
+  margin-right: 10px;
+  color: #64ffda;
+  font-size: 14px;
+  line-height: 12px; }
+
+#work h2 {
+  position: relative; }
+
+#work h2::after {
+  position: absolute;
+  bottom: 0px;
+  top: -10px;
+  content: '';
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  margin-right: -100%;
+  margin-left: 20px;
+  border-bottom: 1px solid #8892B0; }
+
+#work .color-card {
+  background: #172A45; }
+
+@media (max-width: 575.98px) {
+  #home h6 {
+    font-size: 1rem; }
+  #home h1 {
+    font-size: 2rem; }
+  #home p {
+    font-size: 1rem;
+    width: 90% !important; }
+  #about p {
+    font-size: 1rem; }
+  #about .m-grid {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+  #about .c-img {
+    height: 50vw;
+    width: 50vw; }
+  #about .color-overlay {
+    width: 50vw;
+    height: 50vw; }
+  #work .mycrd {
+    margin-bottom: 1rem;
+    margin-left: 2rem; } }

@@ -151,7 +151,9 @@ body {
     height: 50vw; }
   #work .mycrd {
     margin-bottom: 1rem;
-    margin-left: 2rem; } }
+    margin-left: 2rem; }
+  #work h2::after {
+    display: none; } }
 
 @media (max-width: 320px) {
   .navbar {

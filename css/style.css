@@ -102,6 +102,11 @@ body {
 #work .color-card {
   background: #172A45; }
 
+#work .flex {
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
 @media (max-width: 575.98px) {
   #home h6 {
     font-size: 1rem; }
@@ -155,7 +160,20 @@ body {
   #work h2::after {
     display: none; } }
 
-@media (max-width: 320px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #home h6 {
+    font-size: 0.7rem; }
+  #home h1 {
+    font-size: 2rem;
+    width: 112%; }
+  #home p {
+    font-size: 1rem;
+    width: 116% !important; }
+  #about p {
+    width: 130%;
+    font-size: 1rem; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) and (max-width: 320px) {
   .navbar {
     width: 415px; }
   #home h6 {

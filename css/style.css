@@ -22,7 +22,7 @@ body {
     text-align: center;
     padding: 16px;
     transition: all 0.3s ease;
-    color: white;
+    color: #ccd6f6;
     font-size: 20px; }
   .icon-bar a:hover {
     color: #64FFDA; }
@@ -119,6 +119,8 @@ body {
   #home p {
     font-size: 1rem;
     width: 90% !important; }
+  #about h2::after {
+    display: none; }
   #about p {
     font-size: 1rem; }
   #about .m-grid {
@@ -136,6 +138,9 @@ body {
   #work .mycrd {
     margin-bottom: 1rem;
     margin-left: 2rem; }
+  #work .xs-flex {
+    display: flex;
+    justify-content: center; }
   #work h2::after {
     display: none; } }
 
@@ -160,9 +165,13 @@ body {
     height: 50vw; }
   #work .mycrd {
     margin-bottom: 1rem;
-    margin-left: 2rem; }
+    margin-left: 2rem; } }
+
+@media (min-width: 1024px) {
+  #work h2 {
+    margin-left: 7.5vw; }
   #work h2::after {
-    display: none; } }
+    left: 274px; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   #home h6 {
@@ -175,7 +184,11 @@ body {
     width: 116% !important; }
   #about p {
     width: 130%;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  #work h2 {
+    margin-left: 10vw; }
+  #work h2::after {
+    display: none; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) and (max-width: 320px) {
   .navbar {

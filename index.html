@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./css/card.css">
     <!-- Contact css -->
     <link rel="stylesheet" href="./css/contact.css">
+    <!-- Back to Top Button css -->
+    <link rel="stylesheet" href="./css/button.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Fav Icon -->
@@ -56,6 +58,9 @@
             </div>
         </div>
     </nav>
+    <!-- Back to Top Button -->
+    <a class="d-none d-lg-block" id="button"></a>
+
     <!-- My Email -->
     <!-- <div class="my-email text-white">
         <h6>Ayoub.bani101@gmail.com</h6>
@@ -465,36 +470,7 @@
 
     <!-- JavaScript -->
     <script src="./javascript/bootstrap.min.js"></script>
-    <script>
-        // Get the current Year for the copyright
-        $('#year').text(new Date().getFullYear())
-
-        // Init ScrollSpy
-        $('body').scrollspy({
-            target: '#main-nav'
-        })
-
-        // addsmouth scroling
-        $("#main-nav a").on("click", function (i) {
-            // check for a hash value
-            if (this.hash !== "") {
-                // Pervent default behavior
-                i.preventDefault()
-
-                // store hash
-                const hash = this.hash
-
-                // Animate smooth scroll
-                $("html, body").animate({
-                    scrollTop: $(hash).offset().top
-                }, 900, function () {
-                    //  Add a hash to URL after scroll
-                    window.location.hash = hash
-                })
-            }
-        })
-    </script>
-
+    <script src="./javascript/main.js"></script>
 </body>
 
 </html>

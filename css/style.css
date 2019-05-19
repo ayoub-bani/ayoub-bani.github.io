@@ -1,15 +1,15 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'Calibre-SemiBold';
-  src: url("../dest/fonts/Calibre-Semibold.woff2"); }
+  src: url("../dest/fonts/Calibre-Semibold.ttf"); }
 
 body {
   background: #0A192F; }
   body .custom-marg {
     margin-bottom: 200px; }
   body p {
-    line-height: 1.4em;
-    font-family: 'MyWebFont', Fallback, sans-serif; }
+    line-height: 1.3em;
+    font-family: 'Calibre-SemiBold', sans-serif; }
 
 .icon-bar {
   position: fixed;

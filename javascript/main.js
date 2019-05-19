@@ -32,7 +32,7 @@
      var btn = $('#button');
 
      $(window).scroll(function () {
-         if ($(window).scrollTop() > 500) {
+         if ($(window).scrollTop() > 300) {
              btn.addClass('show');
              console.log('Show class ADDED');
          } else {
@@ -47,5 +47,4 @@
              scrollTop: 0
          }, '300');
      });
-
  });

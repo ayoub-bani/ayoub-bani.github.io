@@ -25,11 +25,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Fav Icon -->
     <link rel="shortcut icon" type="image/png" href="image/favicon-32x32.png" />
-
+    <!-- Animate On Scroll CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
 <body data-spy="scroll" data-target="#main-nav">
-    <nav class="navbar navbar-expand-md navbar-dark" id="main-nav">
+    <nav class="navbar navbar-expand-md navbar-dark" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="1500" id="main-nav">
         <div class=" container">
             <a href="index.html" class="navbar-barnd"><img src="image/logo.PNG" alt="Ayoub Logo" height="50"
                     width="50"></a>
@@ -60,12 +62,6 @@
     </nav>
     <!-- Back to Top Button -->
     <a class="d-none d-lg-block" id="button"></a>
-
-    <!-- My Email -->
-    <!-- <div class="my-email text-white">
-        <h6>Ayoub.bani101@gmail.com</h6>
-        <hr>
-    </div> -->
     <!-- The social media icon bar -->
     <div class="d-none d-lg-block icon-bar ml-4">
         <a href="#"><i class="fab fa-github"></i></a>
@@ -77,21 +73,33 @@
 
 
     <!-- Home Section  -->
-    <section id="home" class="">
+    <section id="home">
         <div class="container">
             <div class="row ml-5 mt-4 custom-marg">
                 <div class="col">
-                    <h6 class="text-primary text-monospace">Hi, my name is</h6>
-                    <h1 class="text-white font-weight-bold display-3 custom-text">Ayoub Bani.</h1>
-                    <h1 class="text-secondary font-weight-bold display-3 mb-4">I build things for the web.
+                    <h6 class="text-primary text-monospace" data-aos="fade-up" data-aos-duration="3000">Hi, my name is
+                    </h6>
+                    <h1 class="text-white font-weight-bold display-3 custom-text" data-aos="fade-up"
+                        data-aos-easing="ease-in-sine" data-aos-duration="3000">
+                        Ayoub Bani.</h1>
+                    <h1 class="animated fadeInUp delay-2s slow text-secondary font-weight-bold display-3 mb-4"
+                        data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="3000" data-aos-delay="200">
+                        I
+                        build
+                        things
+                        for the web.
                     </h1>
-                    <p class="lead text-secondary mb-4 w-50 mb-4">I'm a <span class="text-primary">Front-End
+                    <p class="lead text-secondary mb-4 w-50 mb-4" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="500">I'm a
+                        <span class="text-primary">Front-End
                             Developer</span>
                         based in Casablanca, Morocco
                         specializing in
                         building (and occasionally designing) exceptional, high-quality websites and applications.
                         Currently studying at Youcode.</p>
-                    <button href="#contact" class="btn btn-outline-primary">Get In Touch</button>
+                    <button href="#contact" class="btn btn-outline-primary" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-sine" data-aos-delay="900" data-aos-offset="1">Get In
+                        Touch</button>
                 </div>
             </div>
         </div>
@@ -101,16 +109,24 @@
             <div class="row ml-5">
                 <div class="col-md-6">
                     <h2 class="h4 mb-5"><span class="text-primary mr-2">01.</span>About Me</h2>
-                    <p class="lead text-secondary mb-3">Hello! I'm Ayoub, a Front-End developer based in Casablanca,
+                    <p class="lead text-secondary mb-3" data-aos="fade-up" data-aos-duration="2000">Hello! I'm Ayoub, a
+                        Front-End developer based
+                        in
+                        Casablanca,
                         Morocco who
                         enjoys building
                         things that live on the internet. I develop exceptional websites and web apps that provide
                         intuitive, pixel-perfect user interfaces.</p>
 
-                    <p class="text-secondary lead">Here's a few technologies I've been working with recently:
+                    <p class="text-secondary lead" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                        Here's a few technologies
+                        I've been working
+                        with
+                        recently:
                     </p>
                     <div class="container">
-                        <div class="row ml-5 text-secondary m-grid">
+                        <div class="row ml-5 text-secondary m-grid" data-aos="fade-up" data-aos-duration="2000"
+                            data-aos-delay="400">
                             <div class="col-md-6">
                                 <h6 class="skills">JavaScript</h6>
                                 <h6 class="skills">HTML</h6>
@@ -127,8 +143,9 @@
 
                 </div>
                 <div class="col-md-6">
-                    <img src="image/Ayoub.jpg" class="mt-5 img-margin c-img" alt="my face image">
-                    <div class="color-overlay"></div>
+                    <img src="image/Ayoub.jpg" class="mt-5 img-margin c-img" data-aos="zoom-in" data-aos-duration="2000"
+                        data-aos-delay="600" alt="my face image">
+                    <div class="color-overlay" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="600"></div>
                 </div>
 
             </div>
@@ -138,13 +155,15 @@
     <section id="work" class="custom-marg">
         <div class="container">
             <div class="row xl-flex">
-                <h2 class="h4 mb-5 text-white"><span class="text-primary mr-2">02.</span>Some Things I've Built
+                <h2 class="h4 mb-5 text-white" data-aos="fade-up" data-aos-duration="2000"><span
+                        class="text-primary mr-2">02.</span>Some Things
+                    I've Built
                 </h2>
             </div>
-            <div class="d-flex justify-content-center align-items-center flex-wrap">
-                <!-- <div class="col-md-4"> -->
+            <div class="d-flex justify-content-center align-items-center flex-wrap" data-aos="fade-up"
+                data-aos-duration="2000" data-aos-delay="400">
                 <!-- Card start -->
-                <div class="mycrd">
+                <div class="animated slow mycrd">
                     <div class="mb-4" style="width:40px;"><svg xmlns="http://www.w3.org/2000/svg" role="img"
                             viewBox="0 0 60 60" style="color:#64ffda;">
                             <title>Folder</title>
@@ -193,10 +212,8 @@
                     </ul>
                 </div>
                 <!-- Card end -->
-                <!-- </div> -->
-                <!-- <div class="col-md-4"> -->
                 <!-- Card start -->
-                <div class="mycrd">
+                <div class="animated slow mycrd">
                     <div class="mb-4" style="width:40px;"><svg xmlns="http://www.w3.org/2000/svg" role="img"
                             viewBox="0 0 60 60" style="color:#64ffda;">
                             <title>Folder</title>
@@ -246,7 +263,7 @@
                 </div>
                 <!-- Card end -->
                 <!-- Card start -->
-                <div class="mycrd">
+                <div class="animated slow mycrd">
                     <div class="mb-4" style="width:40px;"><svg xmlns="http://www.w3.org/2000/svg" role="img"
                             viewBox="0 0 60 60" style="color:#64ffda;">
                             <title>Folder</title>
@@ -293,12 +310,8 @@
                     </ul>
                 </div>
                 <!-- Card end -->
-                <!-- </div> -->
-
-
-                <!-- <div class="col-md-4"> -->
                 <!-- Card start -->
-                <div class="mycrd">
+                <div class="animated slow mycrd">
                     <div class="mb-4" style="width:40px;"><svg xmlns="http://www.w3.org/2000/svg" role="img"
                             viewBox="0 0 60 60" style="color:#64ffda;">
                             <title>Folder</title>
@@ -345,10 +358,8 @@
                     </ul>
                 </div>
                 <!-- Card end -->
-                <!-- </div> -->
-                <!-- <div class="col-md-4"> -->
                 <!-- Card start -->
-                <div class="mycrd">
+                <div class="animated slow mycrd">
                     <div class="mb-4" style="width:40px;"><svg xmlns="http://www.w3.org/2000/svg" role="img"
                             viewBox="0 0 60 60" style="color:#64ffda;">
                             <title>Folder</title>
@@ -395,10 +406,8 @@
                     </ul>
                 </div>
                 <!-- Card end -->
-                <!-- </div> -->
-                <!-- <div class="col-md-4"> -->
                 <!-- Card start -->
-                <div class="mycrd">
+                <div class="animated slow mycrd">
                     <div class="mb-4" style="width:40px;"><svg xmlns="http://www.w3.org/2000/svg" role="img"
                             viewBox="0 0 60 60" style="color:#64ffda;">
                             <title>Folder</title>
@@ -445,22 +454,26 @@
                     </ul>
                 </div>
                 <!-- Card end -->
-                <!-- </div> -->
             </div>
         </div>
     </section>
     <section id="contact" class="mb-5">
         <div class="d-flex justify-content-center align-items-center flex-column">
             <!-- Contact Form Start-->
-            <h5 class="my-5 text-primary font-weight-normal"><span
+            <h5 class="my-5 text-primary font-weight-normal" data-aos="fade-up" data-aos-duration="2000"><span
                     class="text-primary text-monospace mr-2">02.</span>What's
                 Next?</h5>
-            <h3 class="h1 text-white font-weight-bold display-3">Get In Touch</h3>
-            <p class="w-50 text-secondary">Although I'm not currently looking for freelance opportunities, my inbox is
+            <h3 class="h1 text-white font-weight-bold display-3" data-aos="fade-up" data-aos-duration="2000"
+                data-aos-delay="200">Get In Touch</h3>
+            <p class="w-50 text-secondary" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">Although I'm
+                not currently looking for freelance opportunities,
+                my
+                inbox is
                 always open.
                 Whether for a
                 potential project or just to say hi, I'll try my best to answer your email!</p>
-            <button class="btn btn-lg btn-outline-primary text-monospace mb-5 ">Say Hello</button>
+            <button class="btn btn-lg btn-outline-primary text-monospace mb-5" data-aos="fade-right"
+                data-aos-duration="2000" data-aos-delay="800">Say Hello</button>
             <!-- Contact Form End-->
         </div>
     </section>
@@ -471,6 +484,11 @@
     <!-- JavaScript -->
     <script src="./javascript/bootstrap.min.js"></script>
     <script src="./javascript/main.js"></script>
+    <!-- Animate On Scroll JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

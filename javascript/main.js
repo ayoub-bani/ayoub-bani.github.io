@@ -34,10 +34,8 @@
      $(window).scroll(function () {
          if ($(window).scrollTop() > 300) {
              btn.addClass('show');
-             console.log('Show class ADDED');
          } else {
              btn.removeClass('show');
-             console.log('Show class REMOVED');
          }
      });
 

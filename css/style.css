@@ -111,6 +111,12 @@ body {
   margin-bottom: 1rem;
   margin-left: 2rem; }
 
+#modal .bg-modal {
+  background-color: #0A192F; }
+
+#modal .radius {
+  border-radius: 50px; }
+
 @media (max-width: 575.98px) {
   #home h6 {
     font-size: 1rem; }

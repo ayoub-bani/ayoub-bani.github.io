@@ -27,6 +27,8 @@
     <link rel="shortcut icon" type="image/png" href="image/favicon-32x32.png" />
     <!-- Animate On Scroll CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- reCAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 </head>
 
 <body data-spy="scroll" data-target="#main-nav">
@@ -474,8 +476,51 @@
                 Whether for a
                 potential project or just to say hi, I'll try my best to answer your email!</p>
             <button class="btn btn-lg btn-outline-primary text-monospace mb-5" data-aos="fade-right"
-                data-aos-duration="2000" data-aos-delay="800">Say Hello</button>
+                data-aos-duration="2000" data-aos-delay="800" data-toggle="modal" data-target=".bd-example-modal-lg">Say
+                Hello</button>
             <!-- Contact Form End-->
+        </div>
+    </section>
+    <section id="modal">
+        <!-- Large modal -->
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <!-- contact form start -->
+                    <div class="container bg-modal border border-primary">
+                        <div class="row my-5">
+                            <div class="col d-flex justify-content-center align-items-center">
+                                <img src="./image/email.png" alt="colored email image" class="img-fluid">
+                            </div>
+                            <div class="col d-flex align-items-center align-items-center flex-column">
+                                <h3 class="text-primary text-center">Get In Touch</h3>
+                                <form>
+                                    <div class="form-group">
+                                        <!-- Name input -->
+                                        <label for="exampleInputEmail1">Name</label>
+                                        <input type="email" class="form-control" placeholder="Name">
+
+                                        <!-- Email input -->
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email">
+                                        <small class="form-text text-muted">We'll never share your email
+                                            with anyone else.</small>
+                                        <!-- text input -->
+                                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                                        <textarea class="form-control mb-3" id="exampleFormControlTextarea1"
+                                            rows="3"></textarea>
+                                        <!-- reCAPTCHA -->
+                                        <div class="g-recaptcha mb-2"
+                                            data-sitekey="6LcIYaQUAAAAANmIAzyGsUtv-dSRO5FSNddQ1zFr"></div>
+                                        <button class="btn btn-outline-primary btn-lg form-control">Send</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- contact form end -->
+                </div>
+            </div>
         </div>
     </section>
     <!-- Jquery -->
@@ -490,6 +535,5 @@
     <script>
         AOS.init();
     </script>
-</body>
 
 </html>
